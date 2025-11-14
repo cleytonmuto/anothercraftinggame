@@ -9,7 +9,7 @@ A browser-based crafting game where players mine materials, refine them, and cra
 - **Crafting System**: Combine materials to create weapons, armor, and tools
 - **Progression**: Level up and unlock new recipes as you play
 - **Firebase Persistence**: Your progress is saved to the cloud
-- **Google OAuth2**: Sign in with your Google account
+- **Multiple Authentication Options**: Sign up/sign in with email/password or Google OAuth2
 
 ## Setup Instructions
 
@@ -24,7 +24,8 @@ npm install
 1. Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
 2. Enable Authentication:
    - Go to Authentication > Sign-in method
-   - Enable "Google" as a sign-in provider
+   - Enable "Email/Password" as a sign-in provider
+   - Enable "Google" as a sign-in provider (optional but recommended)
 3. Create a Firestore Database:
    - Go to Firestore Database
    - Create database in production mode
@@ -74,7 +75,7 @@ The game will be available at `http://localhost:5173` (or the port shown in the 
 
 ## Gameplay
 
-1. **Sign In**: Use your Google account to sign in and save your progress
+1. **Sign Up/Sign In**: Create an account with email/password or sign in with Google to save your progress
 2. **Mine Materials**: Click on mining nodes to collect raw materials
 3. **Refine Materials**: Process raw materials into refined components
 4. **Craft Items**: Combine materials to create weapons, armor, and tools
